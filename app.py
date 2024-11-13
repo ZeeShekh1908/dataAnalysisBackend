@@ -2,8 +2,8 @@ from flask import Flask, jsonify,send_from_directory
 from flask_cors import CORS
 from controllers import get_data
 import os
-
-app = Flask(__name__,static_folder='../frontend/build',static_url_path='/')
+#static_folder='../frontend/build',static_url_path='/'
+app = Flask(__name__)
 CORS(app)
 
 # Route for the home page
